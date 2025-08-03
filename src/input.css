@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --slider-animation: slider 12s infinite;
+  --fade-animation: fade 4s infinite;
+}
+
+@keyframes slider {
+  0%,
+  33% {
+    background-image: url(../img/pingpong.jpeg);
+    --text-description: "Mesa de ping pong: jogatina dos intervalos";
+  }
+  34%,
+  66% {
+    background-image: url(../img/quadra.jpeg);
+    --text-description: "Quadra: pena que o resultado do interclasse nao foi dos melhores...";
+  }
+  67%,
+  100% {
+    background-image: url(../img/salao.jpeg);
+    --text-description: "Salão social e cantina: muita conversa e café";
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  15%,
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
